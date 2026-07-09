@@ -18,6 +18,8 @@ pipeline {
                 sh 'mvn test'
             }
         }
+
+
         
          stage('package') {
             steps {
