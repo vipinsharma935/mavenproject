@@ -5,17 +5,17 @@ node {
     }
 
     stage('Build') { 
-       bat 'mvn compile'
+       sh 'mvn compile'
     }
     
      stage('Test') { 
-       bat 'mvn test'
+       sh 'mvn test'
     }
 
 
 
     stage('package') { 
-       bat 'mvn package'
+       sh 'mvn package'
     }
      stage('print') { 
        echo "Hi this is change1 by Vipin"
