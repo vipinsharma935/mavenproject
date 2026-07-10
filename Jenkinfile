@@ -17,6 +17,8 @@ node {
     stage('package') { 
        bat 'mvn package'
     }
-   
+     stage('print') { 
+       echo "Hi this is change1 by Vipin"
+    }
    
 }
