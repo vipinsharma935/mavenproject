@@ -17,7 +17,7 @@ node {
        sh 'mvn package'
     }
      stage('print') { 
-       echo "Hi this is change1 by Vipin"
+       echo "Hi this is change2 by Vipin"
     }
    
 }
