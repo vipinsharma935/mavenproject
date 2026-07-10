@@ -4,7 +4,6 @@ node {
        git 'https://github.com/vipinsharma935/mavenproject.git'
     }
 
-
     stage('Build') { 
        bat 'mvn compile'
     }
