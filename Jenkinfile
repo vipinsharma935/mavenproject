@@ -1,0 +1,20 @@
+node {
+   
+    stage('Checkout') { 
+       git 'https://github.com/vipinsharma935/mavenproject.git'
+    }
+    
+    stage('Build') { 
+       bat 'mvn compile'
+    }
+    
+     stage('Test') { 
+       bat 'mvn test'
+    }
+    
+    stage('package') { 
+       bat 'mvn package'
+    }
+   
+   
+}
